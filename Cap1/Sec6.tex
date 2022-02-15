@@ -1,0 +1,63 @@
+\section*{Exercício 1.6}
+\begin{justify}
+Qual é a potência média da onda triangular mostrada na Figura 1.14?
+\begin{figure}[H]
+       \centering
+       \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{./Cap1/Figuras/fig114.png}
+          \begin{center}
+            Figura 1.14 do livro.
+            \end{center}
+\end{figure}
+
+    \emph{\textbf{Resposta:}}
+    A equação da reta que descreve a reta ascendente entre 0 e 0,1 é dada por
+    \begin{align*}
+        x_1(t) &= m_1(t-t_0)+x_0
+    \end{align*}
+    
+    Onde $m_1$ é o resultado de $\frac{y_f-y_i}{x_f-x_i}$. Calculando $m_1$:
+    \begin{align*}
+        m_1 &= \frac{1-(-1)}{0,1-0}\\
+        m_1 &= \frac{2}{0.1}\\
+        m_1 &= 20
+    \end{align*}
+    
+    Sendo $x_0=-1$ e $t_0=0$, tem-se que a expressão que descreve a onda entre 0 e 0,1 é igual a  \begin{align*}
+        x_1(t) &= 20t-1
+    \end{align*}
+    
+    A equação da reta que descreve a reta descendente entre 0,1 e 0,2 é dada por
+    \begin{align*}
+        x_2(t) &= m_2(t-t_1)+x_1
+    \end{align*}
+    
+    Onde $m_2$ é o resultado de $\frac{y_f-y_i}{x_f-x_i}$. Calculando $m_2$:
+    \begin{align*}
+        m_2 &= \frac{-1-1}{0,2-0,1}\\
+        m_2 &= \frac{-2}{0.1}\\
+        m_2 &= -20
+    \end{align*}
+    
+     Sendo $x_1=1$ e $t_1=0,1$, tem-se que a expressão que descreve a onda entre 0,1 e 0,2 é igual a  
+     \begin{align*}
+            x_2(t) &= -20(t+0.1)+1
+     \end{align*}
+    
+     Encontrando agora a potência associada a $x(t)$:
+     \begin{align*}
+            P &= \frac{1}{T}\int_{0}^{T} [x(t)]^2 \,dt\\
+            P &= \frac{1}{T}\left(\int_{0}^{T/2} [x_1(t)]^2\,dt + \int_{T/2}^{T} [x_2(t)]^2\,dt\right)\\
+            P &= \frac{1}{T}\left(\int_{0}^{T/2} [20t-1]^2\,dt + \int_{T/2}^{T} [-20(t+0.1)+1]^2\,dt\right)\\
+            P &= \frac{1}{T}\left(\int_{0}^{T/2} [400t^2-40t+1]\,dt + \int_{T/2}^{T} [-20t-2]^2\,dt\right)\\
+            P &= \frac{1}{T}\left(\int_{0}^{T/2} [400t^2-40t+1]\,dt + \int_{T/2}^{T} [400t^2-120t+9]\,dt\right)\\
+            P &= \frac{1}{T}\left(\left[\frac{400t^3}{3}-\frac{40t^2}{2}+t\right]_0^{T/2} + \left[\frac{400t^3}{3}-\frac{120t^2}{2}+9t\right]_{T/2}^T\right)\\
+            P &= \frac{1}{T}\left( \frac{50T^3}{3}-5T^2+\frac{T}{2}+\frac{1}{30}  \right)
+     \end{align*}
+     
+     E, com $T=0,2$ se chega a
+     \begin{align*}
+            P &= \frac{1}{3}
+     \end{align*}     
+\end{justify}
+
+

@@ -1,0 +1,45 @@
+\section*{Exercício 1.13}
+\begin{justify}
+Considere os seguintes sinais senoidais, determinando se cada $x[n]$ é periódico. Se for, encontre seu período fundamental.\\
+
+(a) $x[n]=5$ sen$(2n)$
+
+(b) $x[n]=3$ cos$(0,2\pi n)$
+
+(c) $x[n]=5$ cos$(6\pi n)$
+
+(d) $x[n]=5$ sen$(6\pi n/35)$\\
+
+    \emph{\textbf{Resposta: }}Para que um sinal discreto seja periódico é necessário que seu período fundamental $N$ \textbf{seja um número inteiro} e que \textbf{haja um número inteiro} $m$ que satisfaça a igualdade $N=\frac{2\pi m}{\Omega}$, sendo $\Omega$ a frequência fundamental do sinal em questão.\\
+    
+    Na questão (a) se observa que a frequência fundamental do sinal é $\Omega=2$ rad. Com isto,
+    \begin{align*}
+        N&=\frac{2\pi m}{2}\\
+        N&=\pi m
+    \end{align*}
+    Ou seja, se verifica que não existe um número inteiro $m$ que torne o período fundamental $N$ um número inteiro. Desta forma, o sinal $x[n]$ da questão (a) \textbf{não é periódico}.\\
+ 
+    Na questão (b) se observa que a frequência fundamental do sinal é $\Omega=0,2\pi$ rad. Com isto,
+    \begin{align*}
+        N&=\frac{2\pi m}{0,2\pi}\\
+        N&=10 m
+    \end{align*}
+    
+    Ou seja, se verifica que existe pelo menos um número inteiro $m$ que torna o período fundamental $N$ um número inteiro. Desta forma, o sinal $x[n]$ da questão (b) \textbf{é periódico}, e seu período fundamental é aquele cujo menor valor de $m$ satisfaz a condição de que $N$ seja inteiro, ou seja, $N=20$ e $m=1$.\\
+
+    Na questão (c) se observa que a frequência fundamental do sinal é $\Omega=6\pi$ rad. Com isto,
+    \begin{align*}
+        N&=\frac{2\pi m}{6\pi}\\
+        N&=\frac{m}{3}
+    \end{align*}
+    
+    Ou seja, se verifica que existe pelo menos um número inteiro $m$ que torna o período fundamental $N$ um número inteiro. Desta forma, o sinal $x[n]$ da questão (c) \textbf{é periódico}, e seu período fundamental é aquele cujo menor valor de $m$ satisfaz a condição de que $N$ seja inteiro, ou seja, $N=1$ e $m=3$.\\
+
+    Na questão (d) se observa que a frequência fundamental do sinal é $\Omega=6\pi/35$ rad. Com isto,
+    \begin{align*}
+        N&=\frac{2\pi m}{6\pi/35}\\
+        N&=\frac{35m}{3}
+    \end{align*}
+    
+    Ou seja, se verifica que existe pelo menos um número inteiro $m$ que torna o período fundamental $N$ um número inteiro. Desta forma, o sinal $x[n]$ da questão (d) \textbf{é periódico}, e seu período fundamental é aquele cujo menor valor de $m$ satisfaz a condição de que $N$ seja inteiro, ou seja, $N=35$ e $m=3$.\\
+\end{justify}

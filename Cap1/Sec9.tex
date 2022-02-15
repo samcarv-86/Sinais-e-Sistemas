@@ -1,0 +1,35 @@
+\section*{Exercício 1.9}
+\begin{justify}
+O sinal de tempo discreto $x[n]$ é definido por
+\begin{equation*}
+    x[n]=
+    \Bigg\{
+    \begin{NiceMatrix}[l]
+    1, & n=1 \\ -1, & n=-1 \\ 0, & n=0 \text{ e } |n|>1
+    \end{NiceMatrix}
+\end{equation*}
+Encontre o sinal composto $y[n]$ definido em termos de $x[n]$ por
+\begin{equation*}
+    y[n]=x[n]+x[-n]
+\end{equation*}
+
+    \emph{\textbf{Resposta:}} A parcela $x[-n]$ é assim atingida:
+        \begin{align*}
+            x[-n]=
+            \Bigg\{
+            \begin{NiceMatrix}[l]
+            1, & -n=1 \\ -1, & -n=-1 \\ 0, & -n=0 \text{ e } |-n|>1
+            \end{NiceMatrix}
+        \end{align*}
+        
+        Ou seja,
+        \begin{align*}
+            x[-n]=
+            \Bigg\{
+            \begin{NiceMatrix}[l]
+            1, & n=-1 \\ -1, & n=1 \\ 0, & n=0 \text{ e } |n|>1
+            \end{NiceMatrix}
+        \end{align*}
+        
+        A soma das parcelas $x[n]$ e $x[-n]$ resulta em $y[n]=0$ para qualquer valor de n.
+\end{justify}

@@ -1,0 +1,19 @@
+\section*{Exercício 1.2}
+\begin{justify}
+Os sinais $x_1(t)$ e $x_2(t)$ mostrados nas Figuras 1.12 (a) e (b) constituem as partes real e imaginária de um sinal de valor complexo $x(t)$. Qual forma de simetria $x(t)$ tem?\\
+
+    \emph{\textbf{Resposta:}}
+    Considerando que $x(t) = x_1(t) + jx_2(t)$, ou seja, $x_1(t)$ corresponde à parte real do sinal $x(t)$ e $x_2(t)$ corresponde à parte imaginária do sinal $x(t)$, então o novo sinal $x(t)$ será descrito por:
+        \begin{equation*}
+            x(t)=
+            \Bigg\{
+                \begin{NiceMatrix}[l]
+                    A+jA, & -T/2 \leq t \leq 0 \\ 
+                    A-jA, & 0 < t \leq T/2 \\ 
+                    0, & \text{caso contrário.}
+                \end{NiceMatrix}
+        \end{equation*}
+        
+Pela descrição do novo sinal $x(t)$, se verifica que, com base no Exercício 1.1, a \textbf{parte real é par} e que a \textbf{parte imaginária é ímpar}. Isso faz com que o sinal $x(t)$ seja \textbf{conjugado simétrico}.
+\end{justify}
+

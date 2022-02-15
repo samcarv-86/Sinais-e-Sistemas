@@ -1,0 +1,39 @@
+\section*{Exercício 1.11}
+\begin{justify}
+O sinal de tempo discreto $x[n]$ é definido por
+\begin{equation*}
+    x[n]=
+    \Bigg\{
+    \begin{NiceMatrix}[l]
+        1, & n=1 \text{ e } n=2 \\ -1, & n=-1 \text{ e } n=-2 \\ 0, & n=0 \text{ e } |n|>2
+    \end{NiceMatrix}
+\end{equation*}
+Encontre o sinal $y[n]=x[n+3]$ deslocado no tempo.\\
+
+    \emph{\textbf{Resposta:}} O novo sinal deslocado no tempo é assim obtido:
+        \begin{align*}
+            x[n+3]=
+                \Bigg\{
+                \begin{NiceMatrix}[l]
+                    1, & n+3=1 \text{ e } n+3=2 \\ -1, & n+3=-1 \text{ e } n+3=-2 \\ 0, & n+3=0 \text{ e } |n+3|>2
+                \end{NiceMatrix}
+        \end{align*}
+        
+        Sabe-se que $|n+3|>2$ pode ser escrito como sendo duas condições, ou seja, 
+        \begin{align*}
+            x[n+3]=
+                \Bigg\{
+                \begin{NiceMatrix}[l]
+                    1, & n+3=1 \text{ e } n+3=2 \\ -1, & n+3=-1 \text{ e } n+3=-2 \\ 0, & n+3=0 \text{, } n+3>2 \text{ e } -(n+3)>2
+                \end{NiceMatrix}
+        \end{align*}
+        
+        Reorganizando os termos:
+        \begin{align*}
+            x[n+3]=
+                \Bigg\{
+                \begin{NiceMatrix}[l]
+                    1, & n=-2 \text{ e } n=-1 \\ -1, & n=-4 \text{ e } n=-5 \\ 0, & n=-3 \text{, } n>-1 \text{ e } n<-5
+                \end{NiceMatrix}
+        \end{align*}
+\end{justify}

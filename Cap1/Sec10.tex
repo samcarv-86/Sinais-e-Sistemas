@@ -1,0 +1,38 @@
+\section*{Exercício 1.10}
+\begin{justify}
+Repita o Exercício 1.9 para
+\begin{equation*}
+    x[n]=
+    \Big\{
+    \begin{NiceMatrix}[l]
+        1, & n=-1 \text{ e } n=1 \\ 0, & n=0 \text{ e } |n|>1
+    \end{NiceMatrix}
+\end{equation*}
+
+    \emph{\textbf{Resposta:}} A parcela $x[-n]$ é assim atingida:
+        \begin{align*}
+            x[-n]=
+                \Big\{
+                \begin{NiceMatrix}[l]
+                    1, & -n=-1 \text{ e } -n=1 \\ 0, & -n=0 \text{ e } |-n|>1
+                \end{NiceMatrix}
+        \end{align*}
+        
+        Ou seja,
+        \begin{align*}
+            x[-n]=
+                \Big\{
+                \begin{NiceMatrix}[l]
+                    1, & n=1 \text{ e } n=-1 \\ 0, & n=0 \text{ e } |n|>1
+                \end{NiceMatrix}
+        \end{align*}
+        
+        A soma das parcelas $x[n]$ e $x[-n]$ resulta em
+        \begin{align*}
+            y[n]=
+                \Big\{
+                \begin{NiceMatrix}[l]
+                    2, & n=1 \text{ e } n=-1 \\ 0, & n=0 \text{ e } |n|>1
+                \end{NiceMatrix}
+        \end{align*}
+\end{justify}

@@ -1,0 +1,18 @@
+\section*{Exercício 1.16}
+\begin{justify}
+Um sinal de tempo discreto $x[n]$ é definido por
+\begin{equation*}
+    x[n]=
+    \Big\{
+    \begin{NiceMatrix}[l]
+        1, & 0 \leq n \leq 9\\
+        0, & \text{caso contrário}
+    \end{NiceMatrix}
+\end{equation*}
+Usando $u[n]$ (função degrau unitário), descreva $x[n]$ como a superposição de duas funções degrau.\\
+
+    \emph{\textbf{Resposta: }}A função $x[n]$ \emph{liga} em $n=0$ e \emph{desliga} em $n=10$, afinal no instante $n=9$ ela ainda está ativa. Por conta disto,
+    \begin{align*}
+        x[n]&=u[n] - u[n-10]
+    \end{align*}
+\end{justify}
